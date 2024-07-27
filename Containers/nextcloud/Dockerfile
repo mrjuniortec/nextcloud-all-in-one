@@ -18,7 +18,7 @@ COPY config/*.php /
 COPY supervisord.conf /supervisord.conf
 COPY root.motd /root.motd
 
-VOLUME /mnt/ncdata
+VOLUME /home/docker-data/ncdata
 VOLUME /var/www/html
 
 # Custom: change id of www-data user as it needs to be the same like on old installations
